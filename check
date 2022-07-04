@@ -1,0 +1,17 @@
+import sys
+import unittest
+
+
+if len(sys.argv) == 2:
+    _task = None
+    try:
+        _task = int(sys.argv[1])
+        print(f"testing solution for Lettcode problem {_task}:")
+    except ValueError:
+        print("invalid task number provided!")
+        exit()
+    sys.path.append("Test/")
+    exec(f"import problem_{_task}_test")
+
+else:
+    print("Invalid number of arguments!")

@@ -1,0 +1,2 @@
+The files for solutions will be generated here, they follow the leetcode scheme and by basic they provide a Solution class and nothing more \
+*NOTE further data structures such as lists and trees may be implemented by importing them from the structures folder, these are as-is provided by leetcode without any modifications*
