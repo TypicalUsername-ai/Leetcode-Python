@@ -14,8 +14,8 @@ class Solution(object):
             if node: #checks if node exists (node here is the function input)
                 if len(res)==lvl: #appends if we're at correct height
                     res.append(node.val)
-                    solve(node.right, lvl + 1) #due to traversal order we always visit right first
-                    solve(node.left, lvl + 1) # so left only appends when the right is not in place -> this will work no matter the tree structure
+                solve(node.right, lvl + 1) #due to traversal order we always visit right first
+                solve(node.left, lvl + 1) # so left only appends when the right is not in place -> this will work no matter the tree structure
             return 
         solve(root,0)
         return res
